@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Tema Claro*/
+
+body {
+  background-image: linear-gradient(135deg, #f5f5f5 50%, #ec3030 90%);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Logo */
+header .logo a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #232323;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-size: 12px;
+  margin: 20px;
+}
+
+header .headerRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Botão convidar*/
+header .headerRight .invite .btnInvite {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 0px 5px #232323;
+  padding: 7px;
+  font-size: 15px;
+  font-family: "Poppins", Arial, Helvetica;
+  background-color: #f5f5f5;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* Botão trocar tema*/
+header .headerRight #BtnTheme #theme-toggle {
+  font-size: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f5f5f5;
+  margin-left: 30px;
+}
+
+/* Corpo */
+main .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .content .contentText {
+  font-family: "Poppins", Arial, Helvetica;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Texto corpo*/
+main .content .contentText h1 {
+  font-size: 60px;
+  line-height: 20px;
+}
+
+main .content .contentText h2 {
+  font-size: 50px;
+}
+
+main .content .contentText p {
+  line-height: 80px;
+}
+
+/* Entrar na carteira*/
+main .content .usuario {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+main .content .usuario a .enter {
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ec3030;
+  color: #f5f5f5;
+  box-shadow: 0px 0px 5px #4e4d4d;
+  font-weight: 800;
+  font-family: "Poppins", Arial, Helvetica;
+  cursor: pointer;
+}
+
+/*Tema Escuro*/
+body.dark {
+  background-image: linear-gradient(135deg, #232323 50%, #ec3030 90%);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Cabeçalho */
+body.dark header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Logo */
+body.dark header .logo a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-size: 12px;
+  margin: 20px;
+}
+
+body.dark header .headerRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Botão convidar*/
+body.dark header .headerRight .invite .btnInvite {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 0px 5px #232323;
+  padding: 7px;
+  font-size: 15px;
+  font-family: "Poppins", Arial, Helvetica;
+  background-color: #f5f5f5;
+  color: #232323;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* Botão trocar tema*/
+body.dark header .headerRight #BtnTheme #theme-toggle {
+  font-size: 35px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f5f5f5;
+  margin-left: 30px;
+}
+
+/* Corpo */
+body.dark main .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+body.dark main .content .contentText {
+  font-family: "Poppins", Arial, Helvetica;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Texto corpo*/
+body.dark main .content .contentText h1 {
+  color: #f5f5f5;
+  font-size: 60px;
+  line-height: 20px;
+}
+
+body.dark main .content .contentText h2 {
+  color: #f5f5f5;
+  font-size: 50px;
+}
+
+body.dark main .content .contentText p {
+  color: #f5f5f5;
+  line-height: 80px;
+}
+
+/* Botão entrar na carteira*/
+body.dark main .content a .enter {
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ec3030;
+  color: #f5f5f5;
+  box-shadow: 0px 0px 5px #4e4d4d;
+  font-weight: 800;
+  font-family: "Poppins", Arial, Helvetica;
+  cursor: pointer;
+}

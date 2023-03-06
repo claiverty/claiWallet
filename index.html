@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clai's Wallet</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+
+    <script src="./script/themeIndex.js" defer></script>
+    <script src="./script/index.js" defer></script>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <div class="logo">
+          <a href="./index.html">
+            <h1>CLAI'S WALLET</h1>
+          </a>
+        </div>
+        <div class="headerRight">
+          <div class="invite">
+            <button class="btnInvite" onclick="shareUrl()">
+              Convidar amigo
+            </button>
+          </div>
+          <div id="BtnTheme">
+            <button id="theme-toggle">
+              <i class="bx bxs-sun" style="display: none"></i>
+              <i class="bx bxs-moon" style="display: inline-block"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="content">
+          <div>
+            <div class="contentText">
+              <h1>Bem Vindo</h1>
+              <h2>a sua</h2>
+              <h1>Carteira Digital</h1>
+              <p>Controle as suas finanças de uma maneira fácil e rápida.</p>
+            </div>
+            <div class="usuario">
+              <a href="./wallet.html"><button class="enter">Entrar</button></a>
+            </div>
+          </div>
+          <div class="contentImg">
+            <img
+              src="./components/images/imgBank.png"
+              alt="imgBank"
+              width="500px"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

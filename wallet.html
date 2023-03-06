@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clai's Wallet</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/wallet.css" />
+
+    <script src="./script/themeWallet.js" defer></script>
+    <script src="script/wallet.js" defer></script>
+    
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="logo">
+          <a href="./index.html">
+            <h1>CLAI'S WALLET</h1>
+          </a>
+        </div>
+        <div id="BtnTheme">
+          <button id="theme-toggle">
+            <i class="bx bxs-sun" style="display: none"></i>
+            <i class="bx bxs-moon" style="display: inline-block"></i>
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="usuario">
+           <!-- Vai ser adicionado uma funcionalidade para salvar
+           o nome do usuario e suas informações em um banco de dados-->
+          <h1>Olá!</h1>
+          <p>Seja bem-vindo(a) a sua carteira digital.</p>
+    <p id="mensagem"></p>
+        </div>
+        <div class="resume">
+      <div>
+        Entradas: R$
+        <span class="incomes">0.00</span>
+      </div>
+      <div>
+        Saídas: R$
+        <span class="expenses">0.00</span>
+      </div>
+      <div>
+        Total: R$
+        <span class="total">0.00</span>
+      </div>
+    </div>
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc">Descrição</label>
+        <input type="text" id="desc" />
+      </div>
+      <div class="divAmount">
+        <label for="amount">Valor</label>
+        <input type="number" id="amount" />
+      </div>
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <button id="btnNew">Incluir</button>
+    </div>
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th class="columnAmount">Valor</th>
+            <th class="columnType">Tipo</th>
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      </main>
+    </div>
+  </body>
+</html>
