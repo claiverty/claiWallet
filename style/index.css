@@ -31,7 +31,7 @@ header .logo a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
-  color: #232323;
+  color: #151515;
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   font-size: 12px;
   margin: 20px;
@@ -48,7 +48,7 @@ header .headerRight {
 header .headerRight .invite .btnInvite {
   border-radius: 20px;
   border: none;
-  box-shadow: 0px 0px 5px #232323;
+  box-shadow: 0px 0px 5px #151515;
   padding: 7px;
   font-size: 15px;
   font-family: "Poppins", Arial, Helvetica;
@@ -156,12 +156,12 @@ body.dark header .headerRight {
 body.dark header .headerRight .invite .btnInvite {
   border-radius: 20px;
   border: none;
-  box-shadow: 0px 0px 5px #232323;
+  box-shadow: 0px 0px 5px #151515;
   padding: 7px;
   font-size: 15px;
   font-family: "Poppins", Arial, Helvetica;
   background-color: #f5f5f5;
-  color: #232323;
+  color: #151515;
   font-weight: 800;
   cursor: pointer;
 }
