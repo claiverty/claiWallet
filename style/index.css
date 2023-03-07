@@ -117,7 +117,7 @@ main .content .usuario a .enter {
 
 /*Tema Escuro*/
 body.dark {
-  background-image: linear-gradient(135deg, #232323 50%, #ec3030 90%);
+  background-image: linear-gradient(135deg, #151515 50%, #ec3030 90%);
   width: 100vw;
   height: 100vh;
   background-size: cover;

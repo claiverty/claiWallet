@@ -201,6 +201,7 @@ main .usuario p {
 .divAmount {
   display: flex;
   flex-direction: column;
+  color: #050507;
 }
 
 .divDesc input {
@@ -305,18 +306,18 @@ i {
 
 /*Tema Escuro*/
 body.dark {
-  background-color: #232323;
+  background-color: #151515;
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  max-width: 1400px;
+  max-width: 768px;
   margin: auto;
   display: flex;
   justify-content: center;
 }
 
 /* Cabeçalho */
-header {
+body.dark header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -326,47 +327,48 @@ header {
 }
 
 /* Logo */
-header .logo a {
+body.dark header .logo a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
-  color: #232323;
+  color: #f5f5f5;
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   font-size: 12px;
   margin: 20px;
 }
 
 /* Botão trocar tema*/
-header #BtnTheme #theme-toggle {
+body.dark header #BtnTheme #theme-toggle {
   font-size: 30px;
   background: none;
   border: none;
   cursor: pointer;
-  color: #232323;
+  color: #f5f5f5;
   margin: 20px;
 }
 
 /* Carteira */
-main {
+body.dark main {
   font-family: "Poppins", Arial, Helvetica;
 }
 
-main .usuario {
+body.dark main .usuario {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Poppins", Arial, Helvetica;
+  color: #f5f5f5;
 }
 
-main .usuario h1 {
+body.dark main .usuario h1 {
   font-size: 30px;
 }
 
-main .usuario p {
+body.dark main .usuario p {
   font-size: 17px;
 }
 
-.resume {
+body.dark .resume {
   display: flex;
   padding: 10px 0;
   gap: 40px;
@@ -375,83 +377,83 @@ main .usuario p {
   flex-wrap: wrap;
 }
 /* Entrada */
-.resume .boxIncomes {
+body.dark .resume .boxIncomes {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px #ccc;
+  box-shadow: none;
   width: 200px;
   height: 110px;
   padding: 10px;
   background-color: #8fe878;
 }
 
-.resume .boxIncomes .iconBox {
+body.dark .resume .boxIncomes .iconBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.resume .boxIncomes .iconBox i {
+body.dark .resume .boxIncomes .iconBox i {
   background-color: #000000;
   color: #f5f5f5;
   padding: 8px;
   border-radius: 15px;
 }
 
-.resume .boxIncomes .iconBox p {
+body.dark .resume .boxIncomes .iconBox p {
   font-size: 25px;
   font-weight: 600;
 }
 
-.resume .boxIncomes .incomes {
+body.dark .resume .boxIncomes .incomes {
   font-size: 27px;
   font-weight: 600;
 }
 
 /* Saída */
-.resume .boxExpenses {
+body.dark .resume .boxExpenses {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px #ccc;
+  box-shadow: none;
   width: 200px;
   height: 110px;
   padding: 10px;
   background-color: #ff6961;
 }
 
-.resume .boxExpenses .iconBox {
+body.dark .resume .boxExpenses .iconBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.resume .boxExpenses .iconBox i {
+body.dark .resume .boxExpenses .iconBox i {
   background-color: #000000;
   color: #f5f5f5;
   padding: 8px;
   border-radius: 15px;
 }
 
-.resume .boxExpenses .iconBox p {
+body.dark .resume .boxExpenses .iconBox p {
   font-size: 25px;
   font-weight: 600;
 }
 
-.resume .boxExpenses .expenses {
+body.dark .resume .boxExpenses .expenses {
   font-size: 27px;
   font-weight: 600;
 }
 
 /* Total */
-.resume .boxTotal {
+body.dark .resume .boxTotal {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0px 0px 5px #ccc;
+  box-shadow: none;
   border-radius: 10px;
   width: 200px;
   height: 110px;
@@ -459,31 +461,31 @@ main .usuario p {
   background-color: #87ceeb;
 }
 
-.resume .boxTotal .iconBox {
+body.dark .resume .boxTotal .iconBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.resume .boxTotal .iconBox i {
+body.dark .resume .boxTotal .iconBox i {
   background-color: #000000;
   color: #f5f5f5;
   padding: 8px;
   border-radius: 15px;
 }
 
-.resume .boxTotal .iconBox p {
+body.dark .resume .boxTotal .iconBox p {
   font-size: 25px;
   font-weight: 600;
 }
 
-.resume .boxTotal .total {
+body.dark .resume .boxTotal .total {
   font-size: 27px;
   font-weight: 600;
 }
 
 /* Adicionar transação */
-.newItem {
+body.dark .newItem {
   display: flex;
   gap: 10px;
   align-items: end;
@@ -492,29 +494,30 @@ main .usuario p {
   flex-wrap: wrap;
 }
 
-.divDesc,
+body.dark .divDesc,
 .divType,
 .divAmount {
   display: flex;
   flex-direction: column;
+  color: #f5f5f5;
 }
 
-.divDesc input {
+body.dark .divDesc input {
   border: 1px solid;
   border-radius: 10px;
 }
 
-.divAmount input {
+body.dark .divAmount input {
   border: 1px solid;
   border-radius: 10px;
 }
 
-.divType select {
+body.dark .divType select {
   border: 1px solid;
   border-radius: 10px;
 }
 
-.newItem #btnNew {
+body.dark .newItem #btnNew {
   background-color: #2c73d2;
   color: #f5f5f5;
   border: none;
@@ -524,77 +527,77 @@ main .usuario p {
   height: 30px;
 }
 
-input,
+body.dark input,
 select {
   padding: 5px;
 }
 /* Histórico de Transações */
-.transactions {
+body.dark .transactions {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
 
-.transactions .transOrder h1 {
+body.dark .transactions .transOrder h1 {
   font-size: 30px;
-  color: #050507;
+  color: #f5f5f5;
 }
 
-.transactions .divTable {
+body.dark .transactions .divTable {
   width: 100%;
   padding: 0 20px 0 20px;
   display: flex;
   justify-content: center;
-  background-color: #ebebeb;
+  background-color: #232323;
   border-radius: 35px;
-  color: #050507;
+  color: #f5f5f5;
 }
 
-table {
+body.dark table {
   width: 98%;
   padding: 20px 0;
   border-radius: 5px;
 }
 
-th {
+body.dark th {
   text-align: start;
   border-bottom: inset;
   padding-bottom: 5px;
 }
 
-i {
+body.dark i {
   font-size: 25px;
 }
 
-.bxs-caret-up-circle {
+body.dark .bxs-caret-up-circle {
   color: #d83121;
 }
 
-.bxs-caret-down-circle {
+body.dark .bxs-caret-down-circle {
   color: #00c9a7;
 }
 
-.columnAction {
+body.dark .columnAction {
   width: 40px;
   text-align: center;
 }
 
-.columnAction .btnTrash {
+body.dark.columnAction .btnTrash {
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-.columnAction .btnTrash .bx-trash {
-  color: #050507;
+body.dark .columnAction .btnTrash .bx-trash {
+  color: #f5f5f5;
 }
 
-.columnAmount {
+body.dark .columnAmount {
   width: 30%;
 }
 
-.columnType {
+body.dark .columnType {
   width: 80px;
   text-align: center;
 }
