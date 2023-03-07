@@ -14,7 +14,6 @@
 
     <script src="./script/themeWallet.js" defer></script>
     <script src="script/wallet.js" defer></script>
-    
   </head>
   <body>
     <div class="page">
@@ -33,66 +32,72 @@
       </header>
       <main>
         <div class="usuario">
-           <!-- Vai ser adicionado uma funcionalidade para salvar
+          <!-- Vai ser adicionado uma funcionalidade para salvar
            o nome do usuario e suas informações em um banco de dados-->
           <h1>Olá!</h1>
           <p>Seja bem-vindo(a) a sua carteira digital.</p>
-    <p id="mensagem"></p>
+          <p id="mensagem"></p>
         </div>
         <div class="resume">
-      <div class="boxIncomes">
-        <div class="iconBox">
-          <p>R$</p>
-          <i class='bx bxs-down-arrow'></i>
+          <div class="boxIncomes">
+            <div class="iconBox">
+              <p>R$</p>
+              <i class="bx bxs-down-arrow"></i>
+            </div>
+            <span class="incomes">0.00</span>
+          </div>
+          <div class="boxExpenses">
+            <div class="iconBox">
+              <p>R$</p>
+              <i class="bx bxs-up-arrow"></i>
+            </div>
+            <span class="expenses">0.00</span>
+          </div>
+          <div class="boxTotal">
+            <div class="iconBox">
+              <p>R$</p>
+              <i class="bx bxs-bank"></i>
+            </div>
+            <span class="total">0.00</span>
+          </div>
         </div>
-        <span class="incomes">0.00</span>
-      </div>
-      <div class="boxExpenses">
-        <div class="iconBox">
-          <p>R$</p>
-          <i class='bx bxs-up-arrow' ></i>
+
+        <div class="newItem">
+          <div class="divDesc">
+            <label for="desc">Descrição</label>
+            <input type="text" id="desc" />
+          </div>
+          <div class="divAmount">
+            <label for="amount">Valor</label>
+            <input type="number" id="amount" />
+          </div>
+          <div class="divType">
+            <label for="type">Tipo</label>
+            <select id="type">
+              <option>Entrada</option>
+              <option>Saída</option>
+            </select>
+          </div>
+          <button id="btnNew"><i class="bx bx-right-arrow-alt"></i></button>
         </div>
-        <span class="expenses">0.00</span>
-      </div>
-      <div class="boxTotal">
-        <div class="iconBox">
-          <p>R$</p>
-        <i class='bx bxs-bank'></i>
-      </div>
-        <span class="total">0.00</span>
-      </div>
-    </div>
-    <div class="newItem">
-      <div class="divDesc">
-        <label for="desc">Descrição</label>
-        <input type="text" id="desc" />
-      </div>
-      <div class="divAmount">
-        <label for="amount">Valor</label>
-        <input type="number" id="amount" />
-      </div>
-      <div class="divType">
-        <label for="type">Tipo</label>
-        <select id="type">
-          <option>Entrada</option>
-          <option>Saída</option>
-        </select>
-      </div>
-      <button id="btnNew">Incluir</button>
-    </div>
-    <div class="divTable">
-      <table>
-        <thead>
-          <tr>
-            <th>Descrição</th>
-            <th class="columnAmount">Valor</th>
-            <th class="columnType">Tipo</th>
-            <th class="columnAction"></th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+        <div class="transactions">
+          <div class="transOrder">
+            <h1>Histórico de Transações</h1>
+          </div>
+          <div class="divTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Descrição</th>
+                  <th class="columnAmount">Valor</th>
+                  <th class="columnType">Tipo</th>
+                  <th class="columnAction"></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
       </main>
     </div>
   </body>

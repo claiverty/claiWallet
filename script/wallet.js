@@ -43,11 +43,11 @@ function insertItem(item, index) {
     <td>R$ ${item.amount}</td>
     <td class="columnType">${
       item.type === "Entrada"
-        ? '<i class="bx bxs-chevron-up-circle"></i>'
-        : '<i class="bx bxs-chevron-down-circle"></i>'
+        ? '<i class="bx bxs-caret-down-circle"></i>'
+        : '<i class="bx bxs-caret-up-circle"></i>'
     }</td>
     <td class="columnAction">
-      <button onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button>
+      <button class="btnTrash" onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button>
     </td>
   `;
 

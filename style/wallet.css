@@ -203,25 +203,56 @@ main .usuario p {
   flex-direction: column;
 }
 
-.newItem > button {
+.divDesc input {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.divAmount input {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.divType select {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.newItem #btnNew {
   background-color: #2c73d2;
-  color: white;
+  color: #f5f5f5;
   border: none;
   padding: 0 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  height: 34px;
+  height: 30px;
 }
 
 input,
 select {
   padding: 5px;
 }
+/* Histórico de Transações */
+.transactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
 
-.divTable {
+.transactions .transOrder h1 {
+  font-size: 30px;
+  color: #050507;
+}
+
+.transactions .divTable {
   width: 100%;
+  padding: 0 20px 0 20px;
   display: flex;
   justify-content: center;
+  background-color: #ebebeb;
+  border-radius: 35px;
+  color: #050507;
 }
 
 table {
@@ -240,12 +271,12 @@ i {
   font-size: 25px;
 }
 
-.bxs-chevron-up-circle {
-  color: #00c9a7;
+.bxs-caret-up-circle {
+  color: #d83121;
 }
 
-.bxs-chevron-down-circle {
-  color: #d83121;
+.bxs-caret-down-circle {
+  color: #00c9a7;
 }
 
 .columnAction {
@@ -253,9 +284,14 @@ i {
   text-align: center;
 }
 
-.columnAction > button {
+.columnAction .btnTrash {
   background: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.columnAction .btnTrash .bx-trash {
+  color: #050507;
 }
 
 .columnAmount {
@@ -280,7 +316,7 @@ body.dark {
 }
 
 /* Cabeçalho */
-body.dark header {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -290,35 +326,47 @@ body.dark header {
 }
 
 /* Logo */
-body.dark header .logo a {
+header .logo a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
-  color: #f5f5f5;
+  color: #232323;
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   font-size: 12px;
   margin: 20px;
 }
 
 /* Botão trocar tema*/
-body.dark header #BtnTheme #theme-toggle {
-  font-size: 25px;
+header #BtnTheme #theme-toggle {
+  font-size: 30px;
   background: none;
   border: none;
   cursor: pointer;
-  color: #f5f5f5;
+  color: #232323;
   margin: 20px;
 }
 
-body.dark main {
-  max-width: 550px;
-  width: 100%;
+/* Carteira */
+main {
+  font-family: "Poppins", Arial, Helvetica;
+}
+
+main .usuario {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Poppins", Arial, Helvetica;
 }
 
-body.dark .resume {
+main .usuario h1 {
+  font-size: 30px;
+}
+
+main .usuario p {
+  font-size: 17px;
+}
+
+.resume {
   display: flex;
   padding: 10px 0;
   gap: 40px;
@@ -326,17 +374,116 @@ body.dark .resume {
   justify-content: center;
   flex-wrap: wrap;
 }
-
-body.dark .resume > div {
+/* Entrada */
+.resume .boxIncomes {
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 5px #ccc;
+  justify-content: space-between;
   border-radius: 10px;
+  box-shadow: 0px 0px 5px #ccc;
+  width: 200px;
+  height: 110px;
   padding: 10px;
-  width: 150px;
+  background-color: #8fe878;
 }
 
-body.dark .newItem {
+.resume .boxIncomes .iconBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resume .boxIncomes .iconBox i {
+  background-color: #000000;
+  color: #f5f5f5;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.resume .boxIncomes .iconBox p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.resume .boxIncomes .incomes {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+/* Saída */
+.resume .boxExpenses {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #ccc;
+  width: 200px;
+  height: 110px;
+  padding: 10px;
+  background-color: #ff6961;
+}
+
+.resume .boxExpenses .iconBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resume .boxExpenses .iconBox i {
+  background-color: #000000;
+  color: #f5f5f5;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.resume .boxExpenses .iconBox p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.resume .boxExpenses .expenses {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+/* Total */
+.resume .boxTotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px #ccc;
+  border-radius: 10px;
+  width: 200px;
+  height: 110px;
+  padding: 10px;
+  background-color: #87ceeb;
+}
+
+.resume .boxTotal .iconBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resume .boxTotal .iconBox i {
+  background-color: #000000;
+  color: #f5f5f5;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.resume .boxTotal .iconBox p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.resume .boxTotal .total {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+/* Adicionar transação */
+.newItem {
   display: flex;
   gap: 10px;
   align-items: end;
@@ -345,73 +492,109 @@ body.dark .newItem {
   flex-wrap: wrap;
 }
 
-body.dark .divDesc,
+.divDesc,
 .divType,
 .divAmount {
   display: flex;
   flex-direction: column;
 }
 
-body.dark .newItem > button {
-  background-color: #2c73d2;
-  color: white;
-  border: none;
-  padding: 0 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  height: 34px;
+.divDesc input {
+  border: 1px solid;
+  border-radius: 10px;
 }
 
-body.dark input,
+.divAmount input {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.divType select {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.newItem #btnNew {
+  background-color: #2c73d2;
+  color: #f5f5f5;
+  border: none;
+  padding: 0 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 30px;
+}
+
+input,
 select {
   padding: 5px;
 }
-
-body.dark .divTable {
-  width: 100%;
+/* Histórico de Transações */
+.transactions {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
-body.dark table {
+.transactions .transOrder h1 {
+  font-size: 30px;
+  color: #050507;
+}
+
+.transactions .divTable {
+  width: 100%;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #ebebeb;
+  border-radius: 35px;
+  color: #050507;
+}
+
+table {
   width: 98%;
   padding: 20px 0;
   border-radius: 5px;
 }
 
-body.dark th {
+th {
   text-align: start;
   border-bottom: inset;
   padding-bottom: 5px;
 }
 
-body.dark i {
+i {
   font-size: 25px;
 }
 
-body.dark .bxs-chevron-up-circle {
-  color: #00c9a7;
-}
-
-body.dark .bxs-chevron-down-circle {
+.bxs-caret-up-circle {
   color: #d83121;
 }
 
-body.dark.columnAction {
+.bxs-caret-down-circle {
+  color: #00c9a7;
+}
+
+.columnAction {
   width: 40px;
   text-align: center;
 }
 
-body.dark .columnAction > button {
+.columnAction .btnTrash {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
-body.dark .columnAmount {
+.columnAction .btnTrash .bx-trash {
+  color: #050507;
+}
+
+.columnAmount {
   width: 30%;
 }
 
-body.dark .columnType {
+.columnType {
   width: 80px;
   text-align: center;
 }
