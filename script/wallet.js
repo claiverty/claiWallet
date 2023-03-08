@@ -19,6 +19,7 @@ btnNew.onclick = () => {
     desc: descItem.value,
     amount: Math.abs(amount.value).toFixed(2),
     type: type.value,
+    date: new Date(),
   });
 
   setItensBD();
@@ -57,6 +58,7 @@ function insertItem(item, index) {
 function loadItens() {
   items = getItensBD();
   tbody.innerHTML = "";
+  items.sort((a, b) => new Date(b.date) - new Date(a.date));
   items.forEach((item, index) => {
     insertItem(item, index);
   });

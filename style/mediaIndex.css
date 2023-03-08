@@ -1,0 +1,349 @@
+@media screen and (max-width: 960px) {
+  /* Tema Claro */
+  body {
+    max-width: 768px;
+  }
+
+  /* Corpo */
+  main .content {
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  main .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Texto corpo */
+  main .content .container .contentText {
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .content .container .contentText h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  main .content .container .contentText h2 {
+    font-size: 30px;
+  }
+
+  main .content .container .contentText p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  /* Botão entrar na carteira*/
+  main .content .usuario a .enter {
+    margin-top: 0.6rem;
+  }
+
+  /* IMG Corpo*/
+  main .content .contentImg img {
+    width: 300px;
+  }
+
+  /* Tema Escuro */
+  body.dark {
+    max-width: 768px;
+  }
+
+  /* Corpo */
+  body.dark main .content {
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  body.dark main .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Texto corpo */
+  body.dark main .content .container .contentText {
+    justify-content: center;
+    align-items: center;
+  }
+
+  body.dark main .content .container .contentText h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  body.dark main .content .container .contentText h2 {
+    font-size: 30px;
+  }
+
+  body.dark main .content .container .contentText p {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  /* Botão entrar na carteira*/
+
+  body.dark main .content .usuario a .enter {
+    margin-top: 0.6rem;
+  }
+
+  /* IMG Corpo*/
+  body.dark main .content .contentImg img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  /* Tema Claro */
+  body {
+    max-width: 550px;
+  }
+
+  /* Corpo */
+  main .content {
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  main .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Texto corpo */
+  main .content .container .contentText {
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .content .container .contentText h1 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  main .content .container .contentText h2 {
+    font-size: 18px;
+  }
+
+  main .content .container .contentText p {
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  /* Botão entrar na carteira*/
+  main .content .usuario a .enter {
+    margin-top: 0.6rem;
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  /* IMG Corpo*/
+  main .content .contentImg img {
+    width: 250px;
+  }
+
+  /* Tema Escuro */
+  body.dark {
+    max-width: 550px;
+  }
+
+  /* Corpo */
+  body.dark main .content {
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  body.dark main .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Texto corpo */
+  body.dark main .content .container .contentText {
+    justify-content: center;
+    align-items: center;
+  }
+
+  body.dark main .content .container .contentText h1 {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  body.dark main .content .container .contentText h2 {
+    font-size: 18px;
+  }
+
+  body.dark main .content .container .contentText p {
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  /* Botão entrar na carteira*/
+  body.dark main .content .container .usuario a .enter {
+    margin-top: 0.6rem;
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  /* IMG Corpo*/
+  body.dark main .content .contentImg img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  /* Tema Claro */
+  body {
+    max-width: 400px;
+  }
+
+  /* Logo */
+  header .logo a {
+    font-size: 10px;
+  }
+
+  /* Botão convidar*/
+  header .headerRight .invite .btnInvite {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  header .headerRight #BtnTheme #theme-toggle {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  /* Corpo */
+  main .content {
+    flex-direction: column-reverse;
+  }
+
+  /* Texto corpo */
+  main .content .container .contentText h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  main .content .container .contentText h2 {
+    font-size: 25px;
+  }
+
+  main .content .container .contentText p {
+    font-size: 15px;
+  }
+
+  /* IMG Corpo*/
+  main .content .contentImg img {
+    width: 280px;
+  }
+
+  main .content .container .usuario a .enter {
+    font-size: 15px;
+    width: 100px;
+    padding: 10px;
+  }
+
+  /* Tema Escuro */
+  body.dark {
+    max-width: 400px;
+  }
+
+  /* Logo */
+  body.dark header .logo a {
+    font-size: 10px;
+  }
+
+  /* Botão convidar*/
+  body.dark header .headerRight .invite .btnInvite {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  body.dark header .headerRight #BtnTheme #theme-toggle {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  /* Corpo */
+  body.dark main .content {
+    flex-direction: column-reverse;
+  }
+
+  /* Texto corpo */
+  body.dark main .content .container .contentText h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  body.dark main .content .container .contentText h2 {
+    font-size: 25px;
+  }
+
+  body.dark main .content .container .contentText p {
+    font-size: 15px;
+  }
+
+  /* IMG Corpo*/
+  body.dark main .content .contentImg img {
+    width: 280px;
+  }
+
+  /* Botão entrar na carteira*/
+  body.dark main .content .container .usuario a .enter {
+    font-size: 15px;
+    width: 100px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  /* Tema Claro */
+  /* Texto corpo */
+  main .content .container .contentText h1 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  main .content .container .contentText h2 {
+    font-size: 20px;
+  }
+
+  main .content .container .contentText p {
+    font-size: 15px;
+  }
+
+  /* IMG Corpo*/
+  main .content .contentImg img {
+    width: 250px;
+  }
+
+  /* Tema Escuro */
+  /* Texto corpo */
+  body.dark main .content .container .contentText h1 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  body.dark main .content .container .contentText h2 {
+    font-size: 20px;
+  }
+
+  body.dark main .content .container .contentText p {
+    font-size: 15px;
+  }
+
+  /* IMG Corpo*/
+  body.dark main .content .contentImg img {
+    width: 250px;
+  }
+}

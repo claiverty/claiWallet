@@ -31,6 +31,7 @@ header .logo a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
+  text-align: center;
   color: #151515;
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   font-size: 12px;
@@ -63,7 +64,7 @@ header .headerRight #BtnTheme #theme-toggle {
   background: none;
   border: none;
   cursor: pointer;
-  color: #f5f5f5;
+  color: #ffaa00;
   margin-left: 30px;
 }
 
@@ -75,28 +76,28 @@ main .content {
   align-items: center;
 }
 
+/* Texto corpo */
 main .content .contentText {
   font-family: "Poppins", Arial, Helvetica;
   display: flex;
   flex-direction: column;
 }
 
-/* Texto corpo*/
-main .content .contentText h1 {
+main .content .container .contentText h1 {
   font-size: 60px;
   line-height: 20px;
 }
 
-main .content .contentText h2 {
+main .content .container .contentText h2 {
   font-size: 50px;
 }
 
-main .content .contentText p {
+main .content .container .contentText p {
   line-height: 80px;
 }
 
 /* Entrar na carteira*/
-main .content .usuario {
+main .content .container .usuario {
   display: flex;
   flex-direction: column;
   width: 100px;
@@ -139,6 +140,7 @@ body.dark header .logo a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
+  text-align: center;
   color: #f5f5f5;
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   font-size: 12px;
@@ -172,7 +174,7 @@ body.dark header .headerRight #BtnTheme #theme-toggle {
   background: none;
   border: none;
   cursor: pointer;
-  color: #f5f5f5;
+  color: #bac3ca;
   margin-left: 30px;
 }
 
@@ -191,24 +193,28 @@ body.dark main .content .contentText {
 }
 
 /* Texto corpo*/
-body.dark main .content .contentText h1 {
+body.dark main .content .container .contentText h1 {
   color: #f5f5f5;
   font-size: 60px;
   line-height: 20px;
 }
 
-body.dark main .content .contentText h2 {
+body.dark main .content .container .contentText h2 {
   color: #f5f5f5;
   font-size: 50px;
 }
 
-body.dark main .content .contentText p {
+body.dark main .content .container .contentText p {
   color: #f5f5f5;
   line-height: 80px;
 }
 
 /* Botão entrar na carteira*/
-body.dark main .content a .enter {
+body.dark main .content .container .usuario a {
+  width: 100px;
+}
+
+body.dark main .content .container .usuario a .enter {
   width: 100px;
   padding: 10px;
   border-radius: 20px;
