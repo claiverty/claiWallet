@@ -1,0 +1,220 @@
+@media screen and (max-width: 700px) {
+  /* Tema Claro */
+  body {
+    max-width: 460px;
+  }
+
+  /* Valores da carteira */
+  .resume {
+    gap: 20px;
+  }
+
+  /* Total */
+  .resume .boxTotal {
+    width: 420px;
+  }
+
+  /* Tema Escuro */
+  body.dark {
+    max-width: 460px;
+  }
+
+  /* Valores da carteira */
+  body.dark .resume {
+    gap: 20px;
+  }
+
+  /* Total */
+  body.dark .resume .boxTotal {
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    max-width: 350px;
+  }
+
+  /* Logo */
+  header .logo a {
+    font-size: 12px;
+  }
+
+  main .usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", Arial, Helvetica;
+    text-align: center;
+  }
+
+  /* Valores da carteira */
+  .resume {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Entrada */
+  .resume .boxIncomes {
+    width: 300px;
+    height: 130px;
+  }
+
+  /* Saída */
+  .resume .boxExpenses {
+    width: 300px;
+    height: 130px;
+  }
+
+  /* Total */
+  .resume .boxTotal {
+    width: 300px;
+    height: 130px;
+  }
+
+  .newItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .newItem #btnNew {
+    width: 80px;
+    height: 40px;
+  }
+
+  .transactions .transOrder h1 {
+    text-align: center;
+  }
+
+  /*Tema Escuro*/
+  body.dark {
+    max-width: 350px;
+  }
+
+  /* Logo */
+  body.dark header .logo a {
+    font-size: 12px;
+  }
+
+  /* Valores da carteira */
+  body.dark .resume {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Entrada */
+  body.dark .resume .boxIncomes {
+    width: 300px;
+    height: 130px;
+  }
+
+  /* Saída */
+  body.dark .resume .boxExpenses {
+    width: 300px;
+    height: 130px;
+  }
+
+  /* Total */
+  body.dark .resume .boxTotal {
+    width: 300px;
+    height: 130px;
+  }
+
+  body.dark .newItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body.dark .newItem #btnNew {
+    width: 80px;
+    height: 40px;
+  }
+
+  body.dark .transactions .transOrder h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* Tema Claro */
+  body {
+    max-width: 280px;
+  }
+
+  /* Logo*/
+  header .logo a {
+    font-size: 11px;
+  }
+
+  main .usuario h1 {
+    font-size: 25px;
+  }
+
+  main .usuario p {
+    font-size: 15px;
+  }
+
+  /* Valores da carteira */
+  .resume {
+    gap: 10px;
+  }
+
+  /* Entrada */
+  .resume .boxIncomes {
+    width: 270px;
+    height: 130px;
+  }
+
+  /* Saída */
+  .resume .boxExpenses {
+    width: 270px;
+    height: 130px;
+  }
+
+  /* Total */
+  .resume .boxTotal {
+    width: 270px;
+    height: 130px;
+  }
+  /* Tema Escuro */
+  body.dark {
+    max-width: 280px;
+  }
+
+  /* Logo*/
+  body.dark header .logo a {
+    font-size: 11px;
+  }
+
+  body.dark main .usuario h1 {
+    font-size: 25px;
+  }
+
+  body.dark main .usuario p {
+    font-size: 15px;
+  }
+
+  /* Valores da carteira */
+  body.dark .resume {
+    gap: 10px;
+  }
+
+  /* Entrada */
+  body.dark .resume .boxIncomes {
+    width: 270px;
+    height: 130px;
+  }
+
+  /* Saída */
+  body.dark .resume .boxExpenses {
+    width: 270px;
+    height: 130px;
+  }
+
+  /* Total */
+  body.dark .resume .boxTotal {
+    width: 270px;
+    height: 130px;
+  }
+}
