@@ -116,30 +116,6 @@ main .content .usuario a .enter {
   cursor: pointer;
 }
 
-/* Parte final */
-footer {
-  font-family: "Poppins", Arial, Helvetica;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-footer p {
-  color: #151515;
-  font-size: 11px;
-}
-
-footer p a {
-  color: #f5f5f5;
-  font-size: 11px;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-footer p a:hover {
-  color: #ec3030;
-}
-
 /*Tema Escuro*/
 body.dark {
   background-image: linear-gradient(135deg, #151515 50%, #ec3030 90%);
@@ -249,28 +225,4 @@ body.dark main .content .container .usuario a .enter {
   font-weight: 800;
   font-family: "Poppins", Arial, Helvetica;
   cursor: pointer;
-}
-
-/* Parte final */
-body.dark footer {
-  font-family: "Poppins", Arial, Helvetica;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-body.dark footer p {
-  color: #f5f5f5;
-  font-size: 11px;
-}
-
-body.dark footer p a {
-  color: #151515;
-  font-size: 11px;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-body.darkfooter p a:hover {
-  color: #ec3030;
 }
